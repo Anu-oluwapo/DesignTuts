@@ -51,21 +51,27 @@ span {
   display: inline-block;
 }
 
-/* ---------------------------------------------------
-    SIDEBAR STYLE
------------------------------------------------------ */
+/* content */
 
-.wrapper {
+.course-progressbar {
+  background: #aaaaaa;
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 0px;
   display: flex;
-  align-items: stretch;
+  height: 15px;
+  width: 100%;
 }
 
-.profile {
-  margin-top: 80px;
-}
-
-.profile h4 {
-  color: #4a4a4a;
+.course-progressbar-value {
+  animation: load 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: #707070;
+  height: 15px;
+  width: 0;
 }
 
 .progressbar {
@@ -74,7 +80,7 @@ span {
   border-radius: 100px;
   align-items: center;
   position: relative;
-  padding: 0 5px;
+  padding: 0 0px;
   display: flex;
   height: 5px;
   width: 190px;
@@ -179,9 +185,63 @@ span {
   );
 }
 
+h1 {
+  font-size: ;
+}
+
+h1 {
+  font-size: ;
+}
+h3 {
+  font-size: 1.5vw;
+}
+
+h1 {
+  font-size: ;
+}
+
+h1 {
+  font-size: ;
+}
+
+.nav-icon {
+  width: 50px;
+}
+
+.tutorial-icon {
+  width: 80px;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+.profile {
+  margin-top: 80px;
+}
+
+#sidebar.active .profile {
+  margin-top: 0px;
+}
+
+.profile h4 {
+  color: #4a4a4a;
+}
+
+#sidebar.active .profile h4,
+#sidebar.active .profile p,
+#sidebar.active .list-unstyled h3 {
+  display: none;
+}
+
 #sidebar {
-  min-width: 400px;
-  max-width: 400px;
+  min-width: 300px;
+  max-width: 350px;
   background: #7386d5;
   color: #fff;
   transition: all 0.3s;
@@ -189,11 +249,16 @@ span {
 }
 .sidebar-header {
   background-color: #d5ecff !important;
-  height: 300px;
+  height: 250px;
+}
+
+#sidebar.active .sidebar-header {
+  background-color: #d5ecff !important;
+  height: 100px;
 }
 #sidebar.active {
-  min-width: 80px;
-  max-width: 80px;
+  min-width: 100px;
+  max-width: 100px;
   text-align: center;
 }
 
@@ -351,7 +416,9 @@ a.article:hover {
     margin-left: 0 !important;
   }
   #sidebar .sidebar-header h3,
-  #sidebar .CTAs {
+  #sidebar .CTAs,
+  #sidebar .sidebar-header .profile p,
+  h4 {
     display: none;
   }
   #sidebar .sidebar-header strong {

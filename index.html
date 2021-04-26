@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>DesignTutorials - Dashboard</title>
+    <link rel="shortcut icon" href="assets/design.png">
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
@@ -32,27 +33,27 @@
             <div class="sidebar-header">
                 <!-- <strong>BS</strong> -->
                 <div class="profile">
-                    <img src="assets/profilee.png"><br><br>
-                    <h4>John Doe</h4>
-                    <p>doejohn@gmail.com</p>
+                    <img class="nav-icon" src="assets/profilee.png"><br><br>
+                    <h4 id="">John Doe</h4>
+                    <p id="">doejohn@gmail.com</p>
                 </div>
             </div>
 
-            <ul class="list-unstyled components">
+            <ul class="list-unstyled components" style="border-bottom: none;">
                 <li class="active">
                     <a href="#">
-                        <img src="assets/courses.png">
-                        My Courses
+                        <img class="nav-icon" src="assets/courses.png">
+                        <span>My Courses</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="assets/favourites.png">
-                        Favorites
+                        <img class="nav-icon" src="assets/favourites.png">
+                        <span>Favorites</span>
                     </a>
                     <a href="#pageSubmenu">
-                        <img src="assets/download.png">
-                        Downloads
+                        <img class="nav-icon" src="assets/download.png">
+                        <span>Downloads</span>
                     </a>
                 </li><br> <br>
 
@@ -60,20 +61,20 @@
                 <h3 style="color: #4A4A4A; margin-left: 20px;"><b>Courses</b></h3>
                 <li>
                     <a href="#">
-                        <img src="assets/design.png">
-                        UI Design Tools
+                        <img class="nav-icon" src="assets/design.png">
+                        <span>UI Design Tools</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="assets/cross.png">
-                        UI Cross Platform Design
+                        <img class="nav-icon" src="assets/cross.png">
+                        <span>UI Cross Platform Design</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="assets/react.png">
-                        React For Developers
+                        <img class="nav-icon" src="assets/react.png">
+                        <span>React For Developers</span>
                     </a>
                 </li>
 
@@ -83,20 +84,20 @@
                 <h3 style="color: #4A4A4A; margin-left: 20px;"><b>Tutorials</b></h3>
                 <li>
                     <a href="#">
-                        <img src="assets/nav-xd.png">
-                        Adobe XD
+                        <img class="nav-icon" src="assets/nav-xd.png">
+                        <span>Adobe XD</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="assets/nav-sketch.png">
-                        Sketch
+                        <img class="nav-icon" src="assets/nav-sketch.png">
+                        <span>Sketch</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="assets/nav-figma.png">
-                        Figma
+                        <img class="nav-icon" src="assets/nav-figma.png">
+                        <span>Figma</span>
                     </a>
                 </li>
             </ul>
@@ -106,75 +107,101 @@
         <!-- Page Content  -->
         <div id="content">
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
 
+            <div class="container-fluid row mb-4">
+                <div class="col-3 mr-4">
                     <button type="button" id="sidebarCollapse" class="btn btn-info">
                         <i class="fas fa-align-left"></i>
-                        <span>Toggle Sidebar</span>
+                        <!-- <span>Toggle Sidebar</span> -->
                     </button>
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Page</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Page</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Page</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Page</a>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
-            </nav>
+
+                <div class="col-7 ">
+                    <input style="border-radius: 25px; float: right;" class="form-control d-block " type="text"
+                        placeholder="search |">
+                </div>
+            </div>
+
 
             <h2>Courses</h2><br>
             <div class="courses row">
                 <div class="col-md-6 row">
 
-                    <div class="col-md-6">
+                    <div class="col-md-12 col-lg-6 mb-4">
                         <div class="card course1">
                             <div class="card-body">
                                 <h5 class="card-title text-right"><img style="width: 8%;" src="assets/like.png"></h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of the card's content.</p>
-                                <a href="#" class="card-link">Card link</a>
-                                <a href="#" class="card-link">Another link</a>
+                                <img style="width: 80%;" class="d-block mx-auto" src="assets/seo.png">
+                                <h3 class="card-subtitle mt-3 mb-3 text-white text-center">SEO for the web</h3>
+                                <h6 class="card-subtitle mb-2 text-center text-light">20 videos - 5 hours
+                                </h6>
+
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-12 col-lg-6 mb-4">
 
                         <div class="card course2">
                             <div class="card-body">
                                 <h5 class="card-title text-right"><img style="width: 8%;" src="assets/like.png"></h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of the card's content.</p>
-                                <a href="#" class="card-link">Card link</a>
-                                <a href="#" class="card-link">Another link</a>
+                                <img style="width: 80%;" class="d-block mx-auto" src="assets/ios.png">
+                                <h3 class="card-subtitle mt-3 mb-4 text-dark text-center">iOS cross platform UI Design
+                                </h3>
+                                <h6 class="card-subtitle mb-2 text-center text-light">20 videos - 5 hours
+                                </h6>
+
                             </div>
                         </div>
 
                     </div>
 
-                    <div class="col-md-12 mt-4">
+                    <div class="col-md-12 mb-4">
 
                         <div class="card course3">
+                            <div class="card-body row">
+                                <div class="col-lg-5">
+
+                                    <h5 class="card-title">Design Tools For Designers</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">20 videos - 5 hours</h6>
+                                    <!-- <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk
+                                        of the card's content.</p> -->
+                                    <!-- <a href="#" class="card-link">Card link</a>
+                                    <a href="#" class="card-link">Another link</a> -->
+                                </div>
+
+                                <div class="col-lg-7">
+
+                                    <img style="width: 80%;" src="assets/designTools.png">
+
+                                    <div class="row mt-4">
+                                        <div class="col-8 mt-4 pl-4">
+                                            <div class="course-progressbar">
+                                                <div class="course-progressbar-value"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 mt-3">
+                                            <img style="width: 25%;" src="assets/like.png">
+                                            <img style="width: 25%;" src="assets/notification.png">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 row">
+
+                    <div class="col-md-12 mb-5">
+                        <div class="card course4" style="height: 446px;">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
@@ -185,35 +212,20 @@
                                 <a href="#" class="card-link">Another link</a>
                             </div>
                         </div>
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-6">
-
-                    <div class="card course4" style="height: 446px;">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the
-                                bulk
-                                of the card's content.</p>
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
-                        </div>
                     </div>
 
                 </div>
             </div>
 
-            <h2 class="mt-5">Tutorials</h2>
-            <div class="tutorials row">
-                <div class="col-md-4 row mt-4 mb-5">
-                    <div class="col-md-3">
-                        <img src="assets/figma.png">
+            <h2 class="mt-1">Tutorials</h2>
+
+            <div class="mt-5 tutorials row">
+
+                <div class="mb-5 col-lg-4 row">
+                    <div class="pr-2">
+                        <img class="tutorial-icon" src="assets/figma.png">
                     </div>
-                    <div class="col-md-8 mt-2">
+                    <div class="mt-2">
                         <h5>Design a Widget</h5>
                         <p>iOS 14 - 3:01</p>
                         <div class="progressbar">
@@ -223,11 +235,11 @@
                 </div>
 
 
-                <div class="col-md-4 row mt-4 mb-5">
-                    <div class="col-md-3">
-                        <img src="assets/figma.png">
+                <div class="mb-5 col-lg-4 row">
+                    <div class="pr-2">
+                        <img class="tutorial-icon" src="assets/figma.png">
                     </div>
-                    <div class="col-md-8 mt-2 ml-3">
+                    <div class="mt-2">
                         <h5>Design a Widget</h5>
                         <p>iOS 14 - 3:01</p>
                         <div class="progressbar">
@@ -237,11 +249,11 @@
                 </div>
 
 
-                <div class="col-md-4 row mt-4 mb-5">
-                    <div class="col-md-3">
-                        <img src="assets/figma.png">
+                <div class="mb-5 col-lg-4 row">
+                    <div class="pr-2">
+                        <img class="tutorial-icon" src="assets/figma.png">
                     </div>
-                    <div class="col-md-8 mt-2">
+                    <div class="mt-2">
                         <h5>Design a Widget</h5>
                         <p>iOS 14 - 3:01</p>
                         <div class="progressbar">
@@ -251,11 +263,11 @@
                 </div>
 
 
-                <div class="col-md-4 row mt-4 mb-5">
-                    <div class="col-md-3">
-                        <img src="assets/figma.png">
+                <div class="mb-5 col-lg-4 row">
+                    <div class="pr-2">
+                        <img class="tutorial-icon" src="assets/xd.png">
                     </div>
-                    <div class="col-md-8 mt-2">
+                    <div class="mt-2">
                         <h5>Design a Widget</h5>
                         <p>iOS 14 - 3:01</p>
                         <div class="progressbar">
@@ -265,11 +277,11 @@
                 </div>
 
 
-                <div class="col-md-4 row mt-4 mb-5">
-                    <div class="col-md-3">
-                        <img src="assets/figma.png">
+                <div class="mb-5 col-lg-4 row">
+                    <div class="pr-2">
+                        <img class="tutorial-icon" src="assets/xd.png">
                     </div>
-                    <div class="col-md-8 mt-2">
+                    <div class="mt-2">
                         <h5>Design a Widget</h5>
                         <p>iOS 14 - 3:01</p>
                         <div class="progressbar">
@@ -279,11 +291,11 @@
                 </div>
 
 
-                <div class="col-md-4 row mt-4 mb-5">
-                    <div class="col-md-3">
-                        <img src="assets/figma.png">
+                <div class="mb-5 col-lg-4 row">
+                    <div class="pr-2">
+                        <img class="tutorial-icon" src="assets/xd.png">
                     </div>
-                    <div class="col-md-8 mt-2">
+                    <div class="mt-2">
                         <h5>Design a Widget</h5>
                         <p>iOS 14 - 3:01</p>
                         <div class="progressbar">
@@ -293,11 +305,13 @@
                 </div>
 
 
-                <div class="col-md-4 row mt-4 mb-5">
-                    <div class="col-md-3">
-                        <img src="assets/figma.png">
+
+
+                <div class="mb-5 col-lg-4 row">
+                    <div class="pr-2">
+                        <img class="tutorial-icon" src="assets/sketch.png">
                     </div>
-                    <div class="col-md-8 mt-2">
+                    <div class="mt-2">
                         <h5>Design a Widget</h5>
                         <p>iOS 14 - 3:01</p>
                         <div class="progressbar">
@@ -307,11 +321,11 @@
                 </div>
 
 
-                <div class="col-md-4 row mt-4 mb-5">
-                    <div class="col-md-3">
-                        <img src="assets/figma.png">
+                <div class="mb-5 col-lg-4 row">
+                    <div class="pr-2">
+                        <img class="tutorial-icon" src="assets/sketch.png">
                     </div>
-                    <div class="col-md-8 mt-2">
+                    <div class="mt-2">
                         <h5>Design a Widget</h5>
                         <p>iOS 14 - 3:01</p>
                         <div class="progressbar">
@@ -321,11 +335,11 @@
                 </div>
 
 
-                <div class="col-md-4 row mt-4 mb-5">
-                    <div class="col-md-3">
-                        <img src="assets/figma.png">
+                <div class="mb-5 col-lg-4 row">
+                    <div class="pr-2">
+                        <img class="tutorial-icon" src="assets/sketch.png">
                     </div>
-                    <div class="col-md-8 mt-2">
+                    <div class="mt-2">
                         <h5>Design a Widget</h5>
                         <p>iOS 14 - 3:01</p>
                         <div class="progressbar">
@@ -335,11 +349,13 @@
                 </div>
 
 
-                <div class="col-md-4 row mt-4 mb-5">
-                    <div class="col-md-3">
-                        <img src="assets/figma.png">
+
+
+                <div class="mb-5 col-lg-4 row">
+                    <div class="pr-2">
+                        <img class="tutorial-icon" src="assets/swift.png">
                     </div>
-                    <div class="col-md-8 mt-2">
+                    <div class="mt-2">
                         <h5>Design a Widget</h5>
                         <p>iOS 14 - 3:01</p>
                         <div class="progressbar">
@@ -349,11 +365,11 @@
                 </div>
 
 
-                <div class="col-md-4 row mt-4 mb-5">
-                    <div class="col-md-3">
-                        <img src="assets/figma.png">
+                <div class="mb-5 col-lg-4 row">
+                    <div class="pr-2">
+                        <img class="tutorial-icon" src="assets/swift.png">
                     </div>
-                    <div class="col-md-8 mt-2">
+                    <div class="mt-2">
                         <h5>Design a Widget</h5>
                         <p>iOS 14 - 3:01</p>
                         <div class="progressbar">
@@ -363,11 +379,11 @@
                 </div>
 
 
-                <div class="col-md-4 row mt-4 mb-5">
-                    <div class="col-md-3">
-                        <img src="assets/figma.png">
+                <div class="mb-5 col-lg-4 row">
+                    <div class="pr-2">
+                        <img class="tutorial-icon" src="assets/swift.png">
                     </div>
-                    <div class="col-md-8 mt-2">
+                    <div class="mt-2">
                         <h5>Design a Widget</h5>
                         <p>iOS 14 - 3:01</p>
                         <div class="progressbar">
@@ -375,6 +391,12 @@
                         </div>
                     </div>
                 </div>
+
+
+
+
+
+
 
 
 
