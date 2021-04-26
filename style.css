@@ -98,6 +98,87 @@ span {
   }
 }
 
+.card {
+  border: none;
+  border-radius: 23px;
+}
+
+.course1 {
+  /* fallback for old browsers */
+  background: #ff9a9e;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to bottom left,
+    rgba(233, 28, 28, 0.712),
+    rgba(255, 152, 152, 0.541)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to bottom left,
+    rgba(233, 28, 28, 0.712),
+    rgba(255, 152, 152, 0.541)
+  );
+}
+
+.course2 {
+  /* fallback for old browsers */
+  background: #ff9a9e;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to bottom left,
+    rgba(255, 179, 32, 0.712),
+    rgba(255, 228, 174, 0.541)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to bottom left,
+    rgba(255, 179, 32, 0.712),
+    rgba(255, 228, 174, 0.541)
+  );
+}
+
+.course3 {
+  /* fallback for old browsers */
+  background: #ff9a9e;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to bottom left,
+    rgba(255, 179, 32, 0.712),
+    rgba(255, 228, 174, 0.541)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to bottom left,
+    rgba(187, 244, 255, 1),
+    rgba(165, 159, 249, 0.941)
+  );
+}
+
+.course4 {
+  /* fallback for old browsers */
+  background: #ff9a9e;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to bottom left,
+    rgba(255, 179, 32, 0.712),
+    rgba(255, 228, 174, 0.541)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to bottom left,
+    rgba(0, 211, 255, 0.712),
+    rgba(172, 255, 249, 0.541)
+  );
+}
+
 #sidebar {
   min-width: 400px;
   max-width: 400px;
