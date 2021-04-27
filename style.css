@@ -219,6 +219,20 @@ h1 {
   color: #aaaaaa !important;
 }
 
+.start {
+  background-color: #87c0e6;
+  color: white;
+  width: 40%;
+}
+
+.card-body a :hover {
+  background-color: #6fa2c4;
+}
+
+.card-body button :hover {
+  background-color: #00000000;
+}
+
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
@@ -396,7 +410,6 @@ a.article:hover {
 #content {
   width: 100%;
   padding: 20px;
-  padding-bottom: 0px;
   min-height: 100vh;
   transition: all 0.3s;
 }
