@@ -475,4 +475,10 @@ a.article:hover {
   #sidebarCollapse span {
     display: none;
   }
+
+  .start {
+    background-color: #87c0e6;
+    color: white;
+    width: 50%;
+  }
 }
