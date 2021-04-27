@@ -405,7 +405,7 @@ a.article:hover {
     MEDIAQUERIES
 ----------------------------------------------------- */
 
-@media (max-width: 768px) {
+@media (max-width: 1309px) {
   #content {
     width: 100%;
     padding: 20px;
