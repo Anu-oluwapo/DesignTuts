@@ -476,6 +476,14 @@ a.article:hover {
     display: none;
   }
 
+  .list-unstyled span {
+    display: none;
+  }
+
+  #sidebar.active .list-unstyled span {
+    display: block;
+  }
+
   .start {
     background-color: #87c0e6;
     color: white;
