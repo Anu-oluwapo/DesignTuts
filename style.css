@@ -225,6 +225,14 @@ h1 {
   width: 40%;
 }
 
+.card {
+  transition: transform 0.7s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
 .card-body a :hover {
   background-color: #6fa2c4;
 }
